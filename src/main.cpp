@@ -39,7 +39,7 @@ void setup()
   xTaskCreate(taskAES, "AES", configMINIMAL_STACK_SIZE + 4096, NULL, configMAX_PRIORITIES - 4, NULL);
   xTaskCreate(taskMemoryStatus, "MemoryStatus", configMINIMAL_STACK_SIZE + 4096, NULL, configMAX_PRIORITIES - 4, NULL);
 
-  // testTask();
+  testTask();
 }
 
 void loop()
